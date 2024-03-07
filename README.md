@@ -1,5 +1,5 @@
 # Projekt_zespolowy
-Celem projektu będzie stworzenie aplikacji w języku JAVA do zarządzania bazą filmów 
+<p>Celem projektu będzie stworzenie aplikacji w języku JAVA do zarządzania bazą filmów</p>
 Używać będziemy:
   -Spring boot
   -MongoDB

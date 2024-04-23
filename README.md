@@ -3,6 +3,6 @@
 Używać będziemy:
 <ul>
   <li>Spring boot lub Node.js</li>
-  <li>Hibernate/li>
+  <li>Hibernate</li>
   <li>React</li>
 </ul>

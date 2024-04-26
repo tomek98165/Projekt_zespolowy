@@ -56,3 +56,6 @@ body{
   color: #000000;
   margin-bottom: 8px;
 }
+.movie-preview a{
+  text-decoration: none;
+}

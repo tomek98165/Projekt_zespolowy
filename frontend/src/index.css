@@ -1,10 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 /* base styles */
+body{
+  background-size: cover, contain;
+  background-image: url(https://img.freepik.com/free-photo/movie-background-collage_23-2149876007.jpg);
+}
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: #003044;
+ 
 }
 .navbar {
   padding: 20px;
@@ -12,15 +17,16 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #c37474;
 }
 .navbar h1 {
-  color: #016693;
+  color: #f3f4f4;
 }
 .navbar .links {
   margin-left: auto;
 }
 .navbar a {
+  color: #fafafa;
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
@@ -38,10 +44,12 @@
 .movie-preview {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #ffffff;
+  background-color: #ffffff40;
+  border-radius: 15px;
 }
 .movie-preview:hover {
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 3px 5px rgba(255, 0, 0, 0.1);
 }
 .movie-preview h2 {
   font-size: 20px;

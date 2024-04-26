@@ -3,13 +3,13 @@
       {
         "title": "Film 1",
         "body": "Opis filmu z numerem 1",
-        "author": "reżyser 1",
+        "director": "reżyser 1",
         "id": 1
       },
       {
         "title": "Film 2",
         "body": "Opis filmu z numerem 3",
-        "author": "reżyser 2",
+        "director": "reżyser 2",
         "id": 2
       }
     ]

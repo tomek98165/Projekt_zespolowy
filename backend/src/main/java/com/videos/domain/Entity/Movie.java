@@ -4,65 +4,57 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 
-import java.util.List;
 
 @Entity
 @Table(name="movie")
 @AllArgsConstructor
-public class Movie{
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        @Column(name = "id")
-        int id;
-        @Column(name = "title")
-        String title;
-        @Column(name = "director")
-        String director;
-        @Column(name = "description")
-        String description;
-        @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.DETACH, CascadeType.MERGE,
-                CascadeType.PERSIST, CascadeType.REFRESH})
-        @JoinTable(
-                name = "actor_movie",
-                joinColumns = @JoinColumn(name = "movie_id"),
-                inverseJoinColumns = @JoinColumn(name = "actor_id")
-
-        )
-        List<Actor> actors;
+@Builder
+public class Movie {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    int id;
+    @Column(name = "title")
+    String title;
+    @Column(name = "director")
+    String director;
+    @Column(name = "description")
+    String description;
 
     public Movie() {
 
     }
 
-        public String getTitle() {
-                return title;
-        }
+    public int getId() {
+        return id;
+    }
 
-        public void setTitle(String title) {
-                this.title = title;
-        }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-        public String getDirector() {
-                return director;
-        }
+    public String getTitle() {
+        return title;
+    }
 
-        public void setDirector(String director) {
-                this.director = director;
-        }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-        public String getDescription() {
-                return description;
-        }
+    public String getDirector() {
+        return director;
+    }
 
-        public void setDescription(String description) {
-                this.description = description;
-        }
+    public void setDirector(String director) {
+        this.director = director;
+    }
 
-        public List<Actor> getActors() {
-                return actors;
-        }
+    public String getDescription() {
+        return description;
+    }
 
-        public void setActors(List<Actor> actors) {
-                this.actors = actors;
-        }
+    public void setDescription(String description) {
+        this.description = description;
+    }
 }
+

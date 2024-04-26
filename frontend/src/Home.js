@@ -2,7 +2,7 @@ import MovieList from "./MovieList";
 import useFetch from "./useFetch";
 
 const Home = () => {
-    const {data, isPending, error} = useFetch('http://localhost:8000/movies');
+    const {data, isPending, error} = useFetch('http://localhost:8080/movies');
 
     return (
         <div className="home">

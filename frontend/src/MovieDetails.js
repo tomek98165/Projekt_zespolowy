@@ -23,7 +23,7 @@ const MovieDetails = () => {
                     <h2>{ movie.title }</h2>
                     <p>Wyreżyserował: { movie.director }</p>
                     <div>{ movie.description }</div>
-                    <a class="delete-button" onClick={handleClickDelete}>Delete</a>
+                    <button class="delete-button" onClick={handleClickDelete}>Delete</button>
                     {/* <Link class="edit-button" to={{pathname: '/create', state: movie}}>Edytuj</Link> */}
 
                 </article>

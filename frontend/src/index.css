@@ -80,9 +80,10 @@ body{
   width: 100%;
   padding: 6px 10px;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #0a0606;
   box-sizing: border-box;
   display: block;
+  color:#000000;
 }
 .create button {
   background: #c344e2;

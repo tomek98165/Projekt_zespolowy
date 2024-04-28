@@ -30,22 +30,22 @@ const Create = (blog) => {
   
       return (
           <div className="create">
-              <h2>Add a New Blog</h2>
+              <h2>Dodaj nowy film</h2>
               <form onSubmit={handleSubmit}>
-                  <label>Movie title:</label>
+                  <label>Tytuł filmu:</label>
                   <input 
                       type="text"
                       required
                       value = { title }
                       onChange={(e) => setTitle(e.target.value)}
                   />
-                  <label>Movie Description:</label>
+                  <label>Opis filmu:</label>
                   <textarea
                   value = { description }
                   onChange={(e) => setDescription(e.target.value)}
                       required
                   />
-                  <label>Mvoie director:</label>
+                  <label>Reżyser filmu:</label>
                   <input 
                       type="text"
                       required
@@ -53,8 +53,8 @@ const Create = (blog) => {
                       onChange={(e) => setDirector(e.target.value)}
                   />
 
-                  { !isPending && <button>Add blog</button> }
-                  { isPending && <button disabled>Adding blog</button> }
+                  { !isPending && <button>Dodaj film</button> }
+                  { isPending && <button disabled>Dodawanie filmu</button> }
               </form>
           </div>
       )

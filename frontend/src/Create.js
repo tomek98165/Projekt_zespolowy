@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-const Create = (blog) => {
+const Create = (movie) => {
 
 
-      const [id, setId] = useState(blog.id);
-      const [title, setTitle] = useState(blog.title);
-      const [description, setDescription] = useState(blog.description);
-      const [director, setDirector] = useState(blog.director);
+      const [id, setId] = useState(movie.id);
+      const [title, setTitle] = useState(movie.title);
+      const [description, setDescription] = useState(movie.description);
+      const [director, setDirector] = useState(movie.director);
       const [isPending, setIsPending] = useState(false);
       const history = useHistory();
   
@@ -32,6 +32,7 @@ const Create = (blog) => {
           <div className="create">
               <h2>Dodaj nowy film</h2>
               <form onSubmit={handleSubmit}>
+                <p>
                   <label>Tytuł filmu:</label>
                   <input 
                       type="text"
@@ -45,16 +46,21 @@ const Create = (blog) => {
                   onChange={(e) => setDescription(e.target.value)}
                       required
                   />
+                  </p>
+                  <p>
                   <label>Reżyser filmu:</label>
                   <input 
                       type="text"
                       required
                       value = { director }
                       onChange={(e) => setDirector(e.target.value)}
-                  />
+                  /></p>
+                    <p>
+                      { !isPending && <button>Dodaj film</button> }
+                      { isPending && <button disabled>Dodawanie filmu</button> }   
 
-                  { !isPending && <button>Dodaj film</button> }
-                  { isPending && <button disabled>Dodawanie filmu</button> }
+                    </p>
+
               </form>
           </div>
       )

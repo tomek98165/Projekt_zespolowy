@@ -8,7 +8,7 @@ body{
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #041e2a;
+  color: #8eb8cd;
  
 }
 .navbar {
@@ -44,7 +44,7 @@ body{
 .movie-preview, .movie-details {
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #bdafaf0e;
   background-color: #ffffff40;
   border-radius: 15px;
 }
@@ -59,3 +59,37 @@ body{
 .movie-preview a{
   text-decoration: none;
 }
+
+/* create new movie form */
+.create {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+.create label {
+  text-align: left;
+  display: block;
+  color: white;
+}
+.create h2 {
+  font-size: 20px;
+  color: #c344e2;
+  margin-bottom: 30px;
+}
+.create input, .create textarea, .create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+.create button {
+  background: #c344e2;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
